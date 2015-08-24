@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csproj", "{F75F4240-A2EC-49B3-B50C-16A558A64748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Test", "School.Test\School.Test.csproj", "{62491EBA-F3B7-4BAA-8C3C-9C3571A672F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F75F4240-A2EC-49B3-B50C-16A558A64748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75F4240-A2EC-49B3-B50C-16A558A64748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75F4240-A2EC-49B3-B50C-16A558A64748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75F4240-A2EC-49B3-B50C-16A558A64748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62491EBA-F3B7-4BAA-8C3C-9C3571A672F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62491EBA-F3B7-4BAA-8C3C-9C3571A672F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62491EBA-F3B7-4BAA-8C3C-9C3571A672F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62491EBA-F3B7-4BAA-8C3C-9C3571A672F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

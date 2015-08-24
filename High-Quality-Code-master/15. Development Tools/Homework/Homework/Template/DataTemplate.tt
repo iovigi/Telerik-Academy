@@ -1,0 +1,39 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+<#
+int countOfItems = 150; 
+
+string[] constructorParams = new string[countOfItems];
+string[] propertys = new string[countOfItems];
+string[] propertysInit = new string[countOfItems];
+
+for(int i=0;i<countOfItems;i++)
+{
+	constructorParams[i] = "T item"+i;
+	propertys[i] ="T Item"+ i +" { get; set; }";
+	propertysInit[i]="this.Item"+i;
+}
+
+string ctorparams = string.Join(",",constructorParams);
+#>
+
+public class Data<T>
+{
+	public Data(<#=ctorparams #>)
+	{
+		<# for(int i=0;i<countOfItems;i++)
+		{#>
+		<#=propertysInit[i] #> =<#=constructorParams[i].Replace("T","") #>;
+		<#}#>
+	}
+
+	<# for(int i=0;i<countOfItems;i++)
+		{#>
+	<#=propertys[i] #> 
+	<#}#>
+}
