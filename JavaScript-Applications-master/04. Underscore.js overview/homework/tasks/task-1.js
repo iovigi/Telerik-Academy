@@ -11,8 +11,12 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
-  };
+    return function (students) {
+        _.chain(students)
+            .filter(function(student) { return student.firstName.localeCompare(student.lastName) < 0; })
+            .sortBy(function(student) { return student.firstName + ' ' + student.lastName; }).reverse()
+            .each(function(student) { console.log(student.firstName + ' ' + student.lastName); });
+    };
 }
 
 module.exports = solve;
