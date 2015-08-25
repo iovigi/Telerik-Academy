@@ -11,7 +11,31 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
+    return function (students) {
+        _.chain(students).sortBy(function(student) {
+            var marks = student.marks;
+            var sum = 0;
+            var index
+
+            for (index in marks) {
+                sum += marks[index];
+            }
+
+            return (sum / marks.length);
+        }).last(1).each(function (student) {
+            var marks = student.marks;
+            var sum = 0;
+            var index;
+
+            for (index in marks) {
+                sum += marks[index];
+            }
+
+            var averange = sum / marks.length;
+            var fullName = student.firstName + ' ' + student.lastName;
+
+            console.log(fullName + ' has an average score of ' + averange);
+        })
   };
 }
 

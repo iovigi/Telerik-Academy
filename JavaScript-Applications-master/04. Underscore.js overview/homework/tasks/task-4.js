@@ -26,8 +26,33 @@ Create a function that:
 */
 
 function solve(){
-  return function (animals) {
-  };
+    return function (animals) {
+        var newGroups = _.chain(animals).groupBy('species').map(function(v, k) {
+            return {
+                key: k,
+                value: v
+            }
+        }).value().reverse();
+
+        _.each(newGroups, function(item) {
+            var i = 0;
+            var line = '-';
+
+            _.each(item.key, function(char) {
+                line += '-';
+            });
+
+            console.log(line);
+            console.log(item.key + ':');
+            console.log(line);
+            _.chain(item.value)
+                .sortBy('name')
+                .sortBy('legsCount')
+                .each(function(anim) {
+                    console.log(anim.name + ' has ' + anim.legsCount + ' legs');
+                });
+        });
+    };
 }
 
 module.exports = solve;
