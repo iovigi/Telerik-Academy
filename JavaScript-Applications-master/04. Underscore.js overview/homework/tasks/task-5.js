@@ -8,15 +8,8 @@ Create a function that:
 */
 
 function solve(){
-    return function (animals) {
-        var totalLegs = 0;
-
-        _.each(animals, function(animal) {
-            totalLegs += animal.legsCount;
-        });
-
-        console.log('Total number of legs: ' + totalLegs);
-    };
+  return function (animals) {
+  };
 }
 
 module.exports = solve;
