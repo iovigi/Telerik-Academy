@@ -12,7 +12,33 @@ Create a function that:
 
 function solve(){
   return function (books) {
-  };
++        var last = _.chain(books)
++            .groupBy(function(book) {
++                return book.author.firstName + ' ' + book.author.lastName;
++            }).map(function(v, k) {
++                return {
++                    key: k,
++                    value: v
++                }
++            })
++            .groupBy(function (book) { return book.value.length; })
++            .map(function (v, k) {
++                return {
++                    key: k,
++                    value: v
++                }
++            })
++            .max(function(book) {
++                return book.key;
++            }).value();
++
++        _.chain(last.value).sortBy(function (book) {
++                return book.key;
++            })
++            .each(function(book) {
++                console.log(book.key);
++            });
++    };
 }
 
 module.exports = solve;
