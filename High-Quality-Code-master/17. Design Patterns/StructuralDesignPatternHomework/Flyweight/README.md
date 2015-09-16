@@ -1,0 +1,3 @@
+#Flyweight 
+Flyweight е структурен шаблон за дизайн, неговата цел е намаляване на използваната памет от обекти сходни по между си. Той се състой от две части, част която е споделена между сходните обекти и е една за всички тях и част която е отличителна за всеки от тях. За създаване на обекти този шаблон използва Factory(Creational Design Pattern). 
+![alt text](https://raw.githubusercontent.com/iovigi/Telerik-Academy/master/High-Quality-Code-master/17.%20Design%20Patterns/StructuralDesignPatternHomework/Flyweight/uml.gif)
