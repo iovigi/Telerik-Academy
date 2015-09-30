@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students xmlns="urn:students">
+  <student>
+    <name></name>
+    <sex></sex>
+    <birthDate></birthDate>
+    <phone></phone>
+    <email></email>
+    <course></course>
+    <specialty></specialty>
+    <facultyNumber></facultyNumber>
+    <takenExams>
+      <exam>
+        <name></name>
+        <tutor></tutor>
+        <score></score>
+      </exam>
+    </takenExams>
+  </student>
+</students>
