@@ -10,7 +10,7 @@
               <xs:element name="sex" />
               <xs:element name="birthDate" />
               <xs:element name="phone" />
-              <xs:element name="email" />
+              <xs:element name="email"/>
               <xs:element name="course" />
               <xs:element name="specialty" />
               <xs:element name="facultyNumber" />
@@ -35,4 +35,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <xs:simpleType name="email">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>

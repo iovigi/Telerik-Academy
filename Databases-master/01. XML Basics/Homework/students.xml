@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<students xmlns="urn:students">
+<?xml-stylesheet type="text/xsl" href="studentsStyle.xslt" ?>
+<students xmlns:students="urn:students">
   <student>
-    <name></name>
-    <sex></sex>
-    <birthDate></birthDate>
-    <phone></phone>
-    <email></email>
-    <course></course>
-    <specialty></specialty>
-    <facultyNumber></facultyNumber>
+    <name>test</name>
+    <sex>dasdas</sex>
+    <birthDate>21312321</birthDate>
+    <phone>321321</phone>
+    <email>kiro@abv.bg</email>
+    <course>dasdas</course>
+    <specialty>dasdsa</specialty>
+    <facultyNumber>21312321</facultyNumber>
     <takenExams>
       <exam>
-        <name></name>
-        <tutor></tutor>
-        <score></score>
+        <name>fdsfds</name>
+        <tutor>fsdfds</tutor>
+        <score>fdsfds</score>
       </exam>
     </takenExams>
   </student>
