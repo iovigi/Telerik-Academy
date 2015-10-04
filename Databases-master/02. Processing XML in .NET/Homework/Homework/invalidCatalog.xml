@@ -1,0 +1,29 @@
+<albums>
+  <album>
+    <gosho>
+      Gosho
+    </gosho>
+    <artist>
+      Bai Kiro
+    </artist>
+    <year>
+      2015
+    </year>
+    <producer>
+      Pesho
+    </producer>
+    <price>
+      30
+    </price>
+    <songs>
+      <song>
+        <title>
+          Gosho
+        </title>
+        <duration>
+          2:50
+        </duration>
+      </song>
+    </songs>
+	</album>
+</albums>

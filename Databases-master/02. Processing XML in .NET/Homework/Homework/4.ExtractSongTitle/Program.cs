@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-
-namespace ExtractSongTitle
+﻿namespace ExtractSongTitle
 {
+    using System;
+    using System.Xml;
+
     class Program
     {
         static void Main(string[] args)
