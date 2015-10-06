@@ -25,7 +25,7 @@ Primary key is unique index in table, which is used for unique describe some rec
 ####1.  When is a certain database schema normalized?
 The goal of data normalization is to reduce and even eliminate data redundancy, an important consideration for application developers because it is incredibly difficult to stores objects in a relational database that maintains the same information in several places.
   * What are the advantages of normalized databases?
-  The advantage of having a highly normalized data schema is that information is stored in one place and one place only, reducing the possibility of inconsistent data.
+  The advantage of having a highly normalized data schema is that information is stored in one place and one place only, reducing the possibility of inconsistent data.                     
 ####1.  What are database integrity constraints and when are they used?
 Integrity constraints provide a mechanism for ensuring that data conforms to guidelines.
 The most common types of constraints include:
