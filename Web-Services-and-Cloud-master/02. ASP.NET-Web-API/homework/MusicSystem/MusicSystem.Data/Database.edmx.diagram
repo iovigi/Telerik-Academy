@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ddfd637e351e48678100ea933e1c5d1b" Name="Diagram1">
+        <EntityTypeShape EntityType="MusicsModel.Album" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicsModel.AlbumsArtist" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicsModel.Artist" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicsModel.Song" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicsModel.SongsAlbum" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicsModel.sysdiagram" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="MusicsModel.FK_AlbumsArtists_Albums" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicsModel.FK_SongsAlbums_Albums" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicsModel.FK_AlbumsArtists_Artists" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicsModel.FK_Songs_Artists" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicsModel.FK_SongsAlbums_Songs" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
