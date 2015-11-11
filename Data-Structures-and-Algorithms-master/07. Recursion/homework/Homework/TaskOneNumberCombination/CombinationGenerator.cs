@@ -22,7 +22,13 @@ namespace TaskOneNumberCombination
         {
             List<int[]> combinations = new List<int[]>();
 
-            this.GetCombination(ref combinations, new int[this.N], 0);
+            var buffer = new int[this.N];
+            for (int i = 0; i < this.N; i++)
+            {
+                buffer[i] = 1;
+            }
+
+            this.GetCombination(ref combinations, buffer, 0);
 
             return combinations;
         }
@@ -33,13 +39,23 @@ namespace TaskOneNumberCombination
         {
             if (currentIndex == this.N)
             {
-                combinations.Add(buffer);
+                int[] temp = new int[this.N];
+                buffer.CopyTo(temp,0);
+
+                combinations.Add(temp);
 
                 return;
             }
 
-            buffer[currentIndex] = 1;
             this.GetCombination(ref combinations, buffer, currentIndex + 1);
+
+            if (buffer[currentIndex] < this.N)
+            {
+                buffer[currentIndex]++;
+                this.GetCombination(ref combinations, buffer, currentIndex);
+            }
+
+            buffer[currentIndex] = 1;
         }
     }
 }

@@ -6,7 +6,7 @@
     {
         public static void Main(string[] args)
         {
-            CombinationGenerator generator = new CombinationGenerator(2);
+            CombinationGenerator generator = new CombinationGenerator(3);
 
             foreach (var buffer in generator.GetCombination())
             {
