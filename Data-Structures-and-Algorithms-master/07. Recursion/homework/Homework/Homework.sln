@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskOneNumberCombination", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTwoCombinationWithDublicates", "TaskTwoCombinationWithDublicates\TaskTwoCombinationWithDublicates.csproj", "{FB511CA5-0594-4F29-8C86-4F47D2046D37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskThreeCombinationWithoutDublication", "TaskThreeCombinationWithoutDublication\TaskThreeCombinationWithoutDublication.csproj", "{B890B0F3-E564-4D1A-85C4-1522C668E480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FB511CA5-0594-4F29-8C86-4F47D2046D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB511CA5-0594-4F29-8C86-4F47D2046D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB511CA5-0594-4F29-8C86-4F47D2046D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B890B0F3-E564-4D1A-85C4-1522C668E480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B890B0F3-E564-4D1A-85C4-1522C668E480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B890B0F3-E564-4D1A-85C4-1522C668E480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B890B0F3-E564-4D1A-85C4-1522C668E480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
