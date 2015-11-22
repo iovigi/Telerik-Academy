@@ -10,7 +10,27 @@
     {
         public void Sort(IList<T> collection)
         {
-            throw new NotImplementedException();
+            int count = collection.Count;
+
+            for (int i = 0; i < count; i++)
+            {
+                int minIndex = i;
+
+                for (int j = i + 1; j < count; j++)
+                {
+                    if (collection[minIndex].CompareTo(collection[j]) > 0)
+                    {
+                        minIndex = j;
+                    } 
+                }
+
+                if (minIndex != i)
+                {
+                    var temp = collection[i];
+                    collection[i] = collection[minIndex];
+                    collection[minIndex] = temp;
+                }
+            }
         }
     }
 }

@@ -32,17 +32,58 @@
 
         public bool LinearSearch(T item)
         {
-            throw new NotImplementedException();
+            foreach (var element in this.Items)
+            {
+                if (item.CompareTo(element) == 0)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public bool BinarySearch(T item)
         {
-            throw new NotImplementedException();
+            int middleIndex = (this.Items.Count- 1) / 2;
+
+            while (true)
+            {
+                if (this.Items[middleIndex].CompareTo(item) == 0)
+                {
+                    return true;
+                }
+
+                if (middleIndex == 0 || middleIndex == this.Items.Count - 1)
+                {
+                    return false;
+                }
+
+                if (this.Items[middleIndex].CompareTo(item) < 0)
+                {
+                    middleIndex = (this.Items.Count + middleIndex) / 2;
+                }
+                else
+                {
+                    middleIndex = middleIndex / 2;
+                }
+            }
         }
 
         public void Shuffle()
         {
-            throw new NotImplementedException();
+            var count = this.Items.Count;
+            var random = new Random();
+
+
+            for (int i = 0; i < count - 1; i++)
+            {
+                var indexToSwap = random.Next(i + 1, count);
+
+                T temp = this.Items[indexToSwap];
+                this.Items[indexToSwap] = this.Items[i];
+                this.Items[i] = temp;
+            }
         }
 
         public void PrintAllItemsOnConsole()
