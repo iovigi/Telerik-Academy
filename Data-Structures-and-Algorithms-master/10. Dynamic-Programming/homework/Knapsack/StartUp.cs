@@ -6,23 +6,55 @@
     {
         public static void Main(string[] args)
         {
+            int n = int.Parse(Console.ReadLine());
+            int maxWeight = int.Parse(Console.ReadLine());
+
+            int[,] items = new int[n, 2];
+
+            for (int i = 0; i < n; i++)
+            {
+                int weight = int.Parse(Console.ReadLine());
+                int cost = int.Parse(Console.ReadLine());
+
+                items[i, 0] = weight;
+                items[i, 1] = cost;
+            }
+
+            int max = DinamicMaxPrice(items, maxWeight);
+
+            Console.WriteLine(max);
         }
 
-        public static int MaxWeight(int[,] items, bool[] isUsed, int currentWeight, int currentPrice, int maxWeight)
+        private static int DinamicMaxPrice(int[,] items, int maxWeight)
         {
-            int maxPrice = currentPrice;
+            int i, w;
+            int[,] K = new int[items.GetLength(0) + 1, maxWeight + 1];
 
-            for (int i = 0; i < items.Length; i++)
+            for (i = 0; i <= items.GetLength(0); i++)
             {
-                if (!isUsed[i] && items[i, 0] + currentWeight <= maxWeight && maxPrice < currentPrice + items[i, 1])
+                for (w = 0; w <= maxWeight; w++)
                 {
-                    isUsed[i] = true;
-                    maxPrice = MaxWeight(items, isUsed, items[i, 0] + currentWeight, maxPrice + items[i, 1], maxWeight);
-                    isUsed[i] = false;
+                    if (i == 0 || w == 0)
+                    { 
+                        K[i, w] = 0;
+                    }
+                    else if (items[i - 1, 0] <= w)
+                    {
+                        K[i, w] = Max(items[i - 1, 1] + K[i - 1, w - items[i - 1, 0]], K[i - 1, w]);
+                    }
+                    else
+                    { 
+                        K[i, w] = K[i - 1, w];
+                    }
                 }
             }
 
-            return maxPrice;
+            return K[items.GetLength(0), maxWeight];
+        }
+
+        private static int Max(int a, int b)
+        {
+            return (a > b) ? a : b;
         }
     }
 }
