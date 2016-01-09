@@ -1,0 +1,15 @@
+include header.jade
+include navigation.jade
+
+table
+    th
+        td
+        | Name
+        td
+        |   Price
+    each product in content.products
+        tr
+            td= product.name
+            td= product.price
+
+include footer.jade
