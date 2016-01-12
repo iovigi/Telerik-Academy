@@ -1,0 +1,12 @@
+extends layout
+block content
+  table
+    tr
+      th
+        | CPU Name
+    if cpus
+      each cpu in cpus
+        tr
+          td
+            a(href='/detail/' + cpu.id)= cpu.cpu
+

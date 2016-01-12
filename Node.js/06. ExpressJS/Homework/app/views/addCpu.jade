@@ -1,0 +1,17 @@
+extends layout
+block content
+  form(method='POST',action='/add', enctype='multipart/form-data')
+    div
+      | CPU Name:
+      input('name=cpu')
+    div
+      | CPU Model:
+      input('name=model')
+    div
+      | CPU Desc:
+      input('name=desc')
+    div
+      | CPU Pic:
+      input(name='imgFile',type='file')
+    div
+      input(type='submit')

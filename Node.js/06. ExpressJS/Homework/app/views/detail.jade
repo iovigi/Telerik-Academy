@@ -1,0 +1,16 @@
+extends layout
+block content
+  table
+    tr
+     td CPU Name
+     td= cpu.cpu
+    tr
+      td CPU Model
+      td= cpu.model
+    tr
+      td CPU Description
+      td= cpu.desc
+    tr
+      td CPU Picture
+      td
+        img(src= cpu.imgLink,alt='CPU image')
