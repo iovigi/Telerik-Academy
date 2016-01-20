@@ -1,0 +1,15 @@
+﻿@model MVCSumDemo.Models.SumResponceModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<form method="post">
+    <input type="text" name="xNumber" value="@Model.X" />
+    <input type="text" name="yNumber" value="@Model.Y" />
+
+    <input type="submit" value="SUM" />
+</form>
+
+<input type="text" name="Result" value="@Model.Result" placeholder="Result" />
