@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSayHello", "WebSayHello\WebSayHello.csproj", "{2662D591-BA50-4066-A3EA-BB9FD294C028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHello", "WebHello\WebHello.csproj", "{570713C1-65F4-4B67-9F3E-5A3166E0DE7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDumpEvent", "WebDumpEvent\WebDumpEvent.csproj", "{84E72DC1-685A-4101-8B3A-EE9E6492B80F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2662D591-BA50-4066-A3EA-BB9FD294C028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2662D591-BA50-4066-A3EA-BB9FD294C028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2662D591-BA50-4066-A3EA-BB9FD294C028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2662D591-BA50-4066-A3EA-BB9FD294C028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570713C1-65F4-4B67-9F3E-5A3166E0DE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570713C1-65F4-4B67-9F3E-5A3166E0DE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570713C1-65F4-4B67-9F3E-5A3166E0DE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570713C1-65F4-4B67-9F3E-5A3166E0DE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E72DC1-685A-4101-8B3A-EE9E6492B80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E72DC1-685A-4101-8B3A-EE9E6492B80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E72DC1-685A-4101-8B3A-EE9E6492B80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E72DC1-685A-4101-8B3A-EE9E6492B80F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
