@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="RussianNav.master.cs" Inherits="CompanyInfo.RussianNav" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    <ul class="menu">
+        <li>
+            Главная
+        </li>
+    </ul>
+
+    <asp:ContentPlaceHolder ID="ContentRU" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteNav.master.cs" Inherits="UserInfo.SiteNav" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <aside id="sidebar">
+            <div>
+                <ul class="sidebar-nav nav in">
+                    <li>
+                        <a href="PersonalInfo.aspx" >Personal Info</a>
+                    </li>
+                    <li>
+                        <a href="Friends.aspx">Friends</a>
+
+                    </li>
+                    <li>
+                        <a href="AdditionalInfo.aspx">Additional Info</a>
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
