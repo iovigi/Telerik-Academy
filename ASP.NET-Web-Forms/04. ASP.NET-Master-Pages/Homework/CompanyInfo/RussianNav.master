@@ -1,13 +1,26 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="RussianNav.master.cs" Inherits="CompanyInfo.RussianNav" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="headRU" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <ul class="menu">
         <li>
-            Главная
+            <a href="IndexRU.aspx">Главная
+            </a>
+        </li>
+        <li>
+            <a href="AboutRU.aspx">Около
+            </a>
+        </li>
+        <li>
+            <a href="ContactRU.aspx">Контакты
+            </a>
         </li>
     </ul>
-
-    <asp:ContentPlaceHolder ID="ContentRU" runat="server">
-    </asp:ContentPlaceHolder>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentRU" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 </asp:Content>

@@ -8,3 +8,9 @@
 .menu li{
     display:inline-block;
 }
+
+.headerUL {
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+}

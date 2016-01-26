@@ -13,10 +13,10 @@
         <div>
             <div>
                 Language:
-                <ul>
-                    <li class="language"><a href="HomeRU.aspx">Russian</a></li>
-                     <li class="language"><a href="HomeEN.aspx">English</a></li>
-                    <li class="language"><a href="HomeCS.aspx">Chinese</a></li>
+                <ul class="headerUL">
+                    <li class="language"><a href="IndexRU.aspx">Russian</a></li>
+                     <li class="language"><a href="Index.aspx">English</a></li>
+                    <li class="language"><a href="IndexCS.aspx">Chinese</a></li>
                 </ul>
             </div>
 
