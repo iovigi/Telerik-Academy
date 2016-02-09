@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MovieSystem.Web.Models.MovieViewModel>
+
+<div id="listMovies">
+    @Html.Partial("_ListMovies", Model)
+</div>
+<br/>
+<br/>
+<br />
+<br />
+<br />
+<br />
+@Html.Partial("_CreateMovie", new MovieSystem.Web.Models.MovieViewModel())

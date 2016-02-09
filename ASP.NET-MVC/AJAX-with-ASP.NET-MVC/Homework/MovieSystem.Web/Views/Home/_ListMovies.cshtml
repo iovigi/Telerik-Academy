@@ -1,0 +1,71 @@
+﻿@model IEnumerable<MovieSystem.Web.Models.MovieViewModel>
+
+<table class="table-bordered">
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            Director
+        </th>
+        <th>
+            Year
+        </th>
+        <th>
+            Leading Male Role
+        </th>
+        <th>
+            Leading Female Role
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Studio
+        </th>
+        <th>
+            Studio Address
+        </th>
+        <th>
+            Delete
+        </th>
+    </tr>
+
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td>
+                @movie.Title
+            </td>
+            <td>
+                @movie.Director
+            </td>
+            <td>
+                @movie.Year
+            </td>
+            <td>
+                @movie.LeadingMaleRole
+            </td>
+            <td>
+                @movie.LeadingFemaleRole
+            </td>
+            <td>
+                @movie.Age
+            </td>
+            <td>
+                @movie.Studio
+            </td>
+            <td>
+                @movie.StudioAddress
+            </td>
+            <td>
+                @Ajax.ActionLink("Delete", "Delete", new { id = movie.ID }, new AjaxOptions()
+           {
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "listMovies"
+           })
+            </td>
+        </tr>
+    }
+
+</table>

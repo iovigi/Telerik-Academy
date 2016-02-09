@@ -1,0 +1,44 @@
+﻿@model MovieSystem.Web.Models.MovieViewModel
+
+@using (Ajax.BeginForm("Insert", new AjaxOptions()
+{
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "listMovies"
+}))
+{
+    <div class="form-control">
+        Title:
+        @Html.TextBoxFor(m => m.Title)
+    </div>
+    <div class="form-control">
+        Director:
+        @Html.TextBoxFor(m => m.Director)
+    </div>
+    <div class="form-control">
+        Year:
+        @Html.TextBoxFor(m => m.Year)
+    </div>
+    <div class="form-control">
+        Leading Male Role:
+        @Html.TextBoxFor(m => m.LeadingMaleRole)
+    </div>
+    <div class="form-control">
+        Leading Female Role:
+        @Html.TextBoxFor(m => m.LeadingFemaleRole)
+    </div>
+    <div class="form-control">
+        Age:
+        @Html.TextBoxFor(m => m.Age)
+    </div>
+    <div class="form-control">
+        Studio:
+        @Html.TextBoxFor(m => m.Studio)
+    </div>
+    <div class="form-control">
+        StudioAddress:
+        @Html.TextBoxFor(m => m.StudioAddress)
+    </div>
+    <div class="form-control">
+        <input type="submit" value="Create" />
+    </div>
+}
