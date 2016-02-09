@@ -7,17 +7,16 @@
     {
         public ActionResult Index(CalculatorRequestModel model = null)
         {
-            if(model ==null)
+            if (model == null)
             {
                 var emptyResponseModel = new CalculatorResponseModel();
-                emptyResponseModel.qyantity = 1;
-                emptyResponseModel.kilo = 1024;
-                emptyResponseModel.delta = 1024 * 8;
 
                 return View(emptyResponseModel);
             }
 
             var responseModel = new CalculatorResponseModel();
+            responseModel.Kilo = model.Kilo;
+            responseModel.Bits = model.Type.GetBits(model.Qyantity, model.Kilo);
 
             return View(responseModel);
         }
