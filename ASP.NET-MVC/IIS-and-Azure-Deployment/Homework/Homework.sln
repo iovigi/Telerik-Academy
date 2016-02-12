@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikDemo.ASP.MVC", "TelerikDemo.ASP.MVC\TelerikDemo.ASP.MVC.csproj", "{2883CC2C-67D9-4D98-A7DB-FF2AFE953966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2883CC2C-67D9-4D98-A7DB-FF2AFE953966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2883CC2C-67D9-4D98-A7DB-FF2AFE953966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2883CC2C-67D9-4D98-A7DB-FF2AFE953966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2883CC2C-67D9-4D98-A7DB-FF2AFE953966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
